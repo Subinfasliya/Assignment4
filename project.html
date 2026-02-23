@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Projects - Personal Portfolio</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <!-- Font Awesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/bb121f03f5.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- External css link -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header class="container">
+      <div class="header-container">
+        <!-- Website Logo  -->
+        <a href="#"
+          ><img class="logo" src="images/logo.png" alt="Website Logo image"
+        /></a>
+
+        <!-- Navigation links -->
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Hamburger Menu icon -->
+        <a
+          href="javascript:void(0)"
+          class="hamburger-icon"
+          onclick="myFunction()"
+        >
+          <i class="fa-solid fa-bars fa-2xl"></i>
+        </a>
+
+        <!-- Hire me Button -->
+        <a class="nav-btn" href="#">Hire Me</a>
+      </div>
+    </header>
+    <!-- Header Section ends -->
+
+    <!-- Main section -->
+    <main>
+      <!-- Project section starts -->
+      <section id="project-section">
+        <article>
+          <!-- Main title -->
+          <h2 class="project-title">Projects</h2>
+          <!-- underline for styling -->
+          <div class="underline"></div>
+
+          <div class="container">
+            <div class="project-container">
+                          <!-- Project card One -->
+            <div class="project-card">
+              <!-- project card image -->
+              <img
+                src="images/project-elegant-edited.png"
+                alt="Elegant Linings Website Image"
+              />
+              <div class="project-card-content">
+                <!-- Project title -->
+                <h5 class="project-card-title">Elegant Linings</h5>
+                <!-- project card description -->
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+                  vitae.
+                </p>
+                <!-- Project card link -->
+                <a href="" class="btn-view">View</a>
+              </div>
+            </div>
+
+            <!-- project card two -->
+            <div class="project-card">
+              <!-- project card image -->
+              <img
+                src="images/project-astronaut-edited.png"
+                alt="Astronaut Job Application Form Image"
+              />
+              <div class="project-card-content">
+                <!-- Project title -->
+                <h5 class="project-card-title">
+                  Astronaut Job Application Form
+                </h5>
+                <!-- project card description -->
+                <p>
+                  Created static website using HTML, CSS and Web Speech API.
+                </p>
+                <!-- Project card link -->
+                <a href="" class="btn-view">View</a>
+              </div>
+            </div>
+
+            <!-- Project card Three -->
+            <div class="project-card">
+              <!-- project card image -->
+              <img
+                src="images/portfolio-project.png"
+                alt="Personal Portfolio Website Image"
+                width="350"
+              />
+              <div class="project-card-content">
+                <!-- Project title -->
+                <h5 class="project-card-title">Personal Portfolio</h5>
+                <!-- project card description -->
+                <p>Created static website with Contact form using HTML CSS.</p>
+                <!-- Project card link -->
+                <a href="" class="btn-view">View</a>
+              </div>
+            </div>
+            </div>
+
+          </div>
+
+        </article>
+      </section>
+      <!-- About sections ends -->
+
+      <!-- Stay in touch section starts-->
+      <section class="stay-in-touch-section">
+        <div class="container stay-in-touch-container">
+          <hgroup>
+            <h2 class="stay-in-touch-title">Stay in Touch</h2>
+            <p class="stay-in-touch-subtitle">
+              Subscribe to receive updates about my latest projects and work.
+            </p>
+          </hgroup>
+
+          <div class="underline"></div>
+
+          <!-- subscribe input for user email -->
+          <div class="subscribe-container">
+            <form action="#">
+              <input
+                type="email"
+                id="subscribe-email"
+                name="email"
+                placeholder="Enter email address *"
+                required
+              />
+              <input type="submit" value="Subscribe" class="subscribe-btn" />
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- Stay in touch section ends -->
+    </main>
+
+    <!-- footer section -->
+    <footer>
+      <div class="container">
+        <div class="footer-container">
+          <!-- Footer links -->
+          <ul class="footer-links">
+            <li>
+              <!-- Link for Linkedin -->
+              <a
+                href="https://www.linkedin.com/in/subin-t-s-049496255/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li>
+              <!-- Link for facebook -->
+              <a
+                href="https://www.facebook.com/profile.php?id=61575574979113"
+                target="_blank"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <!-- Link for GitHub -->
+              <a href="https://github.com/Subinfasliya" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+
+            <li>
+              <!-- Link for twitter -->
+              <a href="https://x.com/Subin_T_S_" target="_blank">
+                <i class="fa-brands fa-square-twitter"></i>
+              </a>
+            </li>
+          </ul>
+
+          <div>
+            <img src="images/logo.png" alt="Website Logo image" />
+          </div>
+
+          <h2 class="footer-title">subinfasliya@gmail.com</h2>
+        </div>
+        <!-- div tag for line -->
+        <div class="line"></div>
+        <p class="copyright-text">Copyright &copy; 2026 Subin T S</p>
+      </div>
+    </footer>
+
+    <!-- Hamburger menu JavaScript scrip -->
+    <script>
+      function myFunction() {
+        var x = document.querySelector(".nav-links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

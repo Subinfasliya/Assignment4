@@ -1,0 +1,970 @@
+/* Google fonts family */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #fefafa;
+  color: #2a2a2a;
+}
+
+/* ---------------- Common style --------------------------- */
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 20px 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  color: rgb(0, 45, 91);
+}
+
+/* -------------- Common style ends --------------------------*/
+
+/* ----------------- Header Style ---------------------------- */
+.header-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 20px 0; */
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #2a2a2a;
+}
+
+/* Nav links hover effects */
+.nav-links a:hover {
+  color: #dc2626;
+}
+
+/* Nav links active */
+.nav-links .active {
+  color: #dc2626;
+}
+/* Hamburger menu icon */
+.hamburger-icon {
+  display: none;
+}
+
+.nav-btn {
+  text-decoration: none;
+  background-color: #ec5b53;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+/* Hire Me btn hover effect */
+.nav-btn:hover {
+  background-color: #dc2626;
+}
+
+/* -------------- Header Style ends ---------------------*/
+
+/* -------------- Main sections styles Starts -----------*/
+
+/*  Hero Section styles starts */
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 25px 0;
+}
+
+.hero-links {
+  list-style: none;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 200px;
+}
+
+.hero-links li {
+  margin-bottom: 15px;
+}
+
+.hero-links a {
+  color: rgb(0, 45, 91);
+}
+
+.hero-links a:hover {
+  color: #dc2626;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.hero-description {
+  margin: 20px 0;
+  font-size: 1rem;
+}
+
+/* Download cv button */
+.download-cv-btn {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ec5b53;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+.arrow {
+  opacity: 0;
+  margin-left: 5px;
+  transition: 0.3s ease;
+}
+.download-cv-btn:hover {
+  background-color: #dc2626;
+  padding-right: 35px;
+}
+
+.download-cv-btn:hover .arrow {
+  opacity: 1;
+  transform: translateX(15px);
+}
+
+/* Hero text Area ends */
+
+.hero-container img {
+  width: 330px;
+  border: 1px solid #dc2626;
+  border-radius: 50%;
+}
+
+/* ----------------- Hero styles ends --------------------*/
+
+/* --------------- Hero About section & About page (about.html) styles start ----------------------------*/
+.about-section {
+  background-color: #fff;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px auto;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  margin: 15px;
+  text-align: center;
+}
+
+.about-subtitle {
+  text-align: center;
+}
+
+.underline {
+  width: 150px;
+  border: 1px solid #dc2626;
+  margin: 20px auto;
+}
+
+.about-content {
+  width: 450px;
+}
+
+.about-content h3 {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.subtitle-underline {
+  width: 60px;
+  border: 1px solid #dc2626;
+  margin: 20px 0;
+}
+
+.about-description {
+  line-height: 28.05px;
+  font-size: 17px;
+  
+}
+
+.about-image {
+  width: 300px;
+  height: 340px;
+  border-radius: 5px;
+  background-color: #ec5b53;
+  position: relative;
+}
+
+.about-image img {
+  width: 300px;
+  border-radius: 5px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+/* About page (about.html - Let's talk with me ) text */
+.about-email-text {
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+/* About page (about.html - Let's talk with me ) Subin's Email */
+.about-email {
+  color: rgb(0, 45, 91);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+}
+
+/* ------------------------ About section styles ends ----------------------------------*/
+
+/* --------------------- Testmonial or Clients Review Section starts -------------------*/
+.testmonial-section {
+  background-image: url("../images/background-image-shape.png");
+  background-repeat: no-repeat;
+  padding: 50px;
+}
+
+.testmonial-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.testmonial-subtitle {
+  text-align: center;
+}
+
+/* clients review card container style */
+.client-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-items: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+/* clients review card styles */
+.card {
+  height: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 5px 10px #e1e1e16b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card-icon {
+  margin: 20px 0;
+}
+
+.card-image-img {
+  height: 80px;
+  border: 1px solid #dc2626;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.card-description {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.card-line {
+  width: 50px;
+  border: 1px solid #dc2626;
+  margin: 25px;
+}
+
+.card-title {
+  color: #2a2a2a;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+/* card styles end*/
+
+/* ---------------------------------- Testmonial or Clients Review Section ends ----------------------- */
+
+/* ---------------------------------- Stay in Touch section styles --------------------------------- */
+
+.stay-in-touch-section {
+  background-color: #fff;
+}
+
+.stay-in-touch-container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.stay-in-touch-title {
+  font-size: 2.5rem;
+  margin: 15px;
+}
+
+.stay-in-touch-subtitle {
+  margin: 20px 0;
+}
+
+.subscribe-container form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 25px 0;
+  padding: 20px;
+}
+
+#subscribe-email {
+  padding: 12px 20px;
+  width: 400px;
+  border: 2px solid rgb(226, 226, 226);
+  outline: none;
+  border-radius: 5px;
+  background-color: #ededed;
+  font-size: 1rem;
+  transition: 0.5s;
+}
+
+#subscribe-email:focus {
+  border: 2px solid #dc2626;
+}
+
+.subscribe-btn {
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background-color: #ec5b53;
+  color: #fff;
+  border-radius: 5px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.subscribe-btn:hover {
+  background-color: #dc2626;
+}
+
+/* --------------------------------- Stay in Touch section ends ------------------------------------- */
+
+/*  ----******************- Home page main sections styles end -**********************--------*/
+
+/* ----------------- Project Page main section styles starts--------------------------------------- */
+
+#project-section,
+#contact-section {
+  margin: 30px 0;
+  padding-bottom: 50px 0;
+}
+
+.project-title,
+.contact-title {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 0;
+  margin-bottom: 30px;
+}
+
+.project-card {
+  border: 1px solid #dc2626;
+  /* width: 550px; */
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.project-card img {
+  width: 250px;
+  object-fit: cover;
+  /* padding: 20px; */
+}
+
+.project-card-content {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.project-card-title {
+  font-size: 1.2rem;
+}
+
+.btn-view {
+  padding: 10px 20px;
+  background-color: #ec5b53;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.btn-view:hover {
+  background-color: #dc2626;
+}
+
+/* --------------- Project section styles end --------------- */
+
+/* --------------- Contact section styles stars ------------------ */
+#contact-section {
+  padding-bottom: 60px;
+}
+
+.contact-details-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.contact-detail-box {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: -1px 1px 5px 0px rgba(180, 180, 180, 0.75);
+  text-align: center;
+}
+
+.contact-detail-box i {
+  font-size: 35px;
+  margin: 20px;
+  color: #dc2626;
+}
+
+.contact-detail-box a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(0, 45, 91);
+}
+
+/* contact form styles start */
+#contact-form {
+  background-image: url("../images/background-image-shape.png");
+  background-repeat: no-repeat;
+  margin-top: 30px;
+}
+
+.form-container {
+  padding: 40px 70px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.form-subtitle {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 17px;
+  border: 3px solid rgb(226, 226, 226);
+  transition: 0.5s;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border: 2px solid #dc2626;
+}
+
+.form-btn {
+  background-color: #ec5b53;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.form-btn:hover {
+  background-color: #dc2626;
+}
+
+/* ------------------------------- contact form styles ends ----------------------- */
+
+/* ----********************- Contact section styles ends -**********************----- */
+
+/* ------------------------------- Footer style starts ---------------------------------- */
+
+footer {
+  background-color: rgb(0, 45, 91);
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-container {
+  /* max-width: 1100px; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+  /* padding: 20px 0; */
+}
+
+footer img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.footer-links li {
+  list-style: none;
+}
+
+.footer-links a {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.footer-title {
+  font-size: 1.2rem;
+  color: #fff;
+  letter-spacing: 0.7px;
+}
+
+footer .line {
+  width: 90%;
+  border: 1px solid #b4b4b4;
+  margin: 25px auto;
+}
+
+footer .copyright-text {
+  text-align: center;
+  margin: 20px;
+  font-size: 1rem;
+  color: #b4b4b4;
+}
+
+/* ----------------------------- Footer styles end ------------------------------------ */
+
+/* ------ Media Query for Mobile Device  --------------- */
+@media (max-width: 768px) {
+  /* Common container for all section*/
+  .container {
+    max-width: 100%;
+    padding: 20px 30px;
+  }
+
+  /* Header section Mobile Screen styles starts */
+
+  .header-container {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+
+  nav .nav-links {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 110px;
+    left: 0;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 2;
+  }
+
+  .nav-links li {
+    margin-bottom: 20px;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 15px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .nav-links a:hover {
+    background-color: #ededed;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+  .hamburger-icon {
+    text-decoration: none;
+    display: block;
+  }
+  .hamburger-icon i {
+    color: rgb(0, 45, 91);
+  }
+  .hamburger-icon i:hover {
+    color: #ec5b53;
+  }
+
+  /* Hero section Mobile Screen styles starts */
+
+  .hero-container {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+
+  .hero-content {
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-links {
+    flex-direction: row;
+    margin: 40px;
+    height: 0;
+  }
+  .hero-image img {
+    width: 270px;
+    max-width: 100%;
+  }
+
+  /* Hero section styles ends */
+
+  /* About section Mobile Screen styles start */
+  .about-section {
+    padding: 0;
+  }
+  .about-title,
+  .project-title,
+  .contact-title {
+    font-size: 1.5rem;
+  }
+  .about-subtitle {
+    font-size: 1rem;
+  }
+  .about-container {
+    margin-top: 10px;
+    flex-direction: column-reverse;
+  }
+
+  .about-image {
+    width: 100%;
+    height: 100%;
+    max-width: 210px;
+    max-height: 235px;
+    margin: 30px auto;
+  }
+  .about-image img {
+    width: 100%;
+    max-width: 200px;
+    position: static;
+  }
+
+  .about-content {
+    width: auto;
+    text-align: center;
+  }
+  .subtitle-underline {
+    margin: 20px auto;
+  }
+  .about-content h3 {
+    font-size: 1.25rem;
+  }
+  .about-description {
+    font-size: 1rem;
+    line-height: 25px;
+    text-align: justify;
+  }
+
+  /* ----------- About section ends --------------------- */
+
+  /* Testmonial Section starts */
+  .testmonial-section {
+    padding: 0;
+    margin: 50px 0;
+  }
+  .testmonial-title {
+    font-size: 1.5rem;
+  }
+  .testmonial-subtitle {
+    font-size: 1rem;
+  }
+
+  /* clients review card styles */
+  .client-card-container {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    width: auto;
+    min-width: 100%;
+  }
+
+  /* Subscribe email section styles */
+  .stay-in-touch-title {
+    font-size: 1.5rem;
+  }
+  .stay-in-touch-subtitle {
+    font-size: 1rem;
+  }
+  /* Subscribe email-(input field) */
+  #subscribe-email {
+    width: 100%;
+    max-width: 310px;
+    font-size: 0.9rem;
+  }
+  /*  ------------------ Subscribe email section styles end ----------------- */
+
+  /* ---------- Project Page Styles Starts -------------- */
+  .project-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .project-card {
+    width: 150px;
+    min-width: 100%;
+    height: auto;
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .project-card img {
+    padding: 0;
+    width: auto;
+  }
+  .project-card-content {
+    gap: 20px;
+  }
+   /* ---------- Project Page Styles ends -------------- */
+
+   
+  /* Footer styles start */
+  .footer-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 35px;
+  }
+
+  .footer-links i {
+    font-size: 1rem;
+  }
+  footer img {
+    width: 100%;
+    height: 100%;
+    min-height: 70px;
+    max-width: 70px;
+  }
+  .footer-title {
+    font-size: 4vw;
+  }
+  footer .copyright-text {
+    font-size: 0.875rem;
+    color: #b4b4b4;
+  }
+}
+
+/* --------------------  Tablet Screen Devices ----------------------------------- */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Common container */
+  .container {
+    max-width: 850px;
+    padding: 20px 30px;
+  }
+  /* Header section styles starts */
+  .header-container {
+    padding: 0;
+  }
+  /* Hero sectio style starts */
+  .hero-container {
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: start;
+  }
+  .hero-image {
+    margin: 20px auto;
+  }
+  .hero-title {
+    font-size: 3.125rem;
+  }
+
+  /* About section styles starts */
+  .about-container {
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    align-items: start;
+  }
+  .about-content {
+    max-width: 100%;
+  }
+  .about-content h3 {
+    font-size: 1.25rem;
+  }
+  .about-image {
+    width: 200px;
+    height: 210px;
+    max-width: 100%;
+  }
+  .about-image img {
+    width: 200px;
+    left: 20px;
+  }
+  .about-description {
+    font-size: 1rem;
+  }
+
+  /* Testmonial section style starts*/
+  .testmonial-section {
+    padding: 20px 0;
+  }
+  .testmonial-title {
+    font-size: 2.5rem;
+  }
+  .client-card-container {
+    grid-template-columns: repeat(2, auto);
+  }
+  .card {
+    width: 300px;
+    max-width: 100%;
+  }
+
+  /* Project Page styles starts */
+   .project-container {
+    grid-template-columns: repeat(2, auto);
+    justify-items: center;
+  }
+  .project-card {
+    width: 350px;
+    min-width: 100%;
+    height: auto;
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .project-card img {
+    padding: 0;
+    width: auto;
+  }
+  .project-card-content {
+    gap: 20px;
+  }
+  /* Footer section styles starts*/
+  .footer-container {
+    max-width: 100%;
+  }
+}
+
+/* ----------------- Desktop Screen media query starts -------------- */
+@media (min-width: 1025px) {
+  /* About section styles starts */
+  .about-image {
+    width: 300px;
+    max-width: 100%;
+  }
+
+  /* Testmonial card or client card section styles starts*/
+  .testmonial-section {
+    padding: 30px 0;
+  }
+
+  .card {
+    width: auto;
+    max-width: 100%;
+  }
+
+  /* Project card styles starts */
+  .project-card {
+    
+    /* min-width: 100%; */
+  }
+}
+
+/* ---------------------------------- END ---------------------- */
