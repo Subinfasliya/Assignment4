@@ -812,15 +812,26 @@ footer .copyright-text {
     height: auto;
     max-width: 100%;
     flex-direction: column;
+    box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.12);
   }
+
   .project-card img {
     padding: 0;
     max-width: 100%;
     height: auto;
+   
   }
   .project-card-content {
     gap: 20px;
   }
+  .project-card-text {
+    font-size: .875rem;
+  }
+
+  .project-card:hover {
+    box-shadow: 10px 11px 12px 1px rgba(0,0,0,0.32);
+  }
+
   /* ---------- Project Page Styles ends -------------- */
 
   /* Contact page styles starts  */
