@@ -34,13 +34,20 @@ h6 {
 /* -------------- Common style ends --------------------------*/
 
 /* ----------------- Header Style ---------------------------- */
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #fefafa;
+  border-bottom: 1px solid #dddddd;
+}
+
 .header-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  /* padding: 20px 0; */
 }
 
 .logo {
@@ -635,6 +642,14 @@ footer .copyright-text {
 
   /* Header section Mobile Screen styles starts */
 
+  #header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fefafa;
+    border-bottom: 1px solid #dddddd;
+  }
+
   .header-container {
     padding: 0;
     display: flex;
@@ -812,7 +827,7 @@ footer .copyright-text {
     height: auto;
     max-width: 100%;
     flex-direction: column;
-    box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.12);
+    box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.12);
     transition: 0.3s;
   }
 
@@ -820,17 +835,16 @@ footer .copyright-text {
     padding: 0;
     max-width: 100%;
     height: auto;
-   
   }
   .project-card-content {
     gap: 20px;
   }
   .project-card-text {
-    font-size: .875rem;
+    font-size: 0.875rem;
   }
 
   .project-card:hover {
-    box-shadow: 10px 11px 12px 1px rgba(0,0,0,0.32);
+    box-shadow: 10px 11px 12px 1px rgba(0, 0, 0, 0.32);
   }
 
   /* ---------- Project Page Styles ends -------------- */
