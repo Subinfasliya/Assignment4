@@ -228,7 +228,6 @@ nav .nav-links {
 .about-description {
   line-height: 28.05px;
   font-size: 17px;
-  
 }
 
 .about-image {
@@ -429,8 +428,8 @@ nav .nav-links {
   height: auto;
   overflow: hidden;
   border-radius: 8px;
- box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.16);
- background-color: #ffffff;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
 }
 
 .project-card img {
@@ -440,7 +439,6 @@ nav .nav-links {
 }
 
 .project-card-content {
-  
   padding: 10px 20px;
 }
 
@@ -479,6 +477,7 @@ nav .nav-links {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 20px;
   justify-content: space-between;
   margin-top: 60px;
 }
@@ -504,7 +503,7 @@ nav .nav-links {
 
 .contact-detail-box a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
   color: rgb(0, 45, 91);
 }
@@ -581,7 +580,6 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin: 20px auto;
- 
 }
 
 footer img {
@@ -823,9 +821,31 @@ footer .copyright-text {
   .project-card-content {
     gap: 20px;
   }
-   /* ---------- Project Page Styles ends -------------- */
+  /* ---------- Project Page Styles ends -------------- */
 
-   
+  /* Contact page styles starts  */
+  .contact-details-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .contact-detail-box {
+    width: auto;
+    max-width: 100%;
+  }
+  .form-container {
+    padding: 20px;
+  }
+  .form-subtitle {
+    text-align: center;
+  }
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.9rem;
+  }
+  .form-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
   /* Footer styles start */
   .footer-container {
     display: flex;
@@ -918,7 +938,7 @@ footer .copyright-text {
   }
 
   /* Project Page styles starts */
-   .project-container {
+  .project-container {
     grid-template-columns: repeat(2, auto);
     justify-items: center;
   }
@@ -934,6 +954,21 @@ footer .copyright-text {
   .project-card-content {
     gap: 20px;
   }
+
+  /* -------------Project page style ends ------------*/
+
+  /* Contact page styles starts */
+  .contact-details-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: stretch;
+  }
+
+  .contact-detail-box {
+    width: 350px;
+    min-width: 100%;
+  }
+
   /* Footer section styles starts*/
   .footer-container {
     max-width: 100%;
@@ -957,7 +992,6 @@ footer .copyright-text {
     width: auto;
     max-width: 100%;
   }
-
 }
 
 /* ---------------------------------- END ---------------------- */
