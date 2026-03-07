@@ -629,6 +629,7 @@ footer .copyright-text {
 /* ------ Media Query for Mobile Device  --------------- */
 @media (max-width: 768px) {
   /* Common container for all section*/
+
   .container {
     max-width: 100%;
     padding: 20px 30px;
@@ -661,9 +662,9 @@ footer .copyright-text {
     display: none;
     width: 100%;
     position: absolute;
-    top: 110px;
+    top: 70px;
     left: 0;
-    background-color: #2a2a2a;
+    background-color: #000000e8;
     padding: 20px;
     border-radius: 5px;
     z-index: 2;
