@@ -32,10 +32,14 @@
         </ul>
       </nav>
 
-      <!-- Hamburger Menu icon -->
-      <a href="javascript:void(0)" class="hamburger-icon" onclick="myFunction()">
-        <i class="fa-solid fa-bars fa-2xl"></i>
-      </a>
+            <!-- Hamburger Menu icon -->
+        <a
+          href="javascript:void(0)"
+          class="hamburger-icon"
+          onclick="myFunction()"
+        >
+          <i class="fa-solid fa-bars fa-2xl"></i>
+        </a>
 
       <!-- Hire me Button -->
       <a class="nav-btn" href="#">Hire Me</a>
@@ -176,9 +180,17 @@
     </div>
   </footer>
 
-  <!-- Hamburger menu JavaScript scrip -->
-  <script src="js/script.js">
-  </script>
+    <!-- Hamburger menu JavaScript scrip -->
+    <script>
+      function myFunction() {
+        var x = document.querySelector(".nav-links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
 
 </body>
 
