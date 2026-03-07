@@ -43,6 +43,9 @@ h6 {
 }
 
 .header-container {
+  width: 1160px;
+  max-width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -629,7 +632,6 @@ footer .copyright-text {
 /* ------ Media Query for Mobile Device  --------------- */
 @media (max-width: 768px) {
   /* Common container for all section*/
-
   .container {
     max-width: 100%;
     padding: 20px 30px;
@@ -664,7 +666,7 @@ footer .copyright-text {
     position: absolute;
     top: 70px;
     left: 0;
-    background-color: #000000e8;
+    background-color: #000000e6;
     padding: 20px;
     border-radius: 5px;
     z-index: 2;
@@ -903,7 +905,8 @@ footer .copyright-text {
   }
   /* Header section styles starts */
   .header-container {
-    padding: 10px 30px;
+    max-width: 850px;
+    padding: 15px 30px;
   }
   .logo {
     width: 55px;
